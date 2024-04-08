@@ -3,7 +3,6 @@ const app = express();
 const dotenv = require("dotenv");
 var cors = require("cors");
 const connectDB = require("./config/db.js");
-const frontendUrl = "https://toheed-wysa.netlify.app";
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 
@@ -11,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://toheed-heliverse.netlify.app/",
   undefined
 ];
 
